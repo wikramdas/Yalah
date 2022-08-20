@@ -29,7 +29,6 @@ export const checkForLocationPermission = onPermissionResult => {
           if (response === RESULTS.GRANTED) {
             onPermissionResult(true);
           } else if (response === RESULTS.BLOCKED) {
-            // openSettings();
             onPermissionResult('blocked');
           } else if (response === 'unavailable') {
             onPermissionResult('unavailable');
